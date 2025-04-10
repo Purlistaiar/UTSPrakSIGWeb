@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<style>
+        body {
+          font-family: 'Times New Roman', Times, serif, sans-serif;
+          text-align: left;
+          padding: 50px;
+          background-color: #ffffff;
+        }
+        h1 {
+          color: rgb(0, 0, 0);
+          text-align: center;
+        }
+        p {
+          font-size: 18px;
+          color: rgb(0, 0, 0);
+          text-align: justify;
+        }
+        r {
+          color: rgb(154, 4, 4);
+        }
+        h2 {color: rgb(63, 62, 62);
+            font-size: 20px;
+            text-align: center;
+        }
+        img {
+          width: 100px;
+          margin-top: 20px;
+        }
+</style>
+
+<head>
+  <title>UTS PRAK SIG WEB</title>
+   <title>Validasi Input</title>
+    <script>
+        function validasiPassword() {
+            let password = document.getElementById("password").value;
+            if (password !== "Selesai") {
+                alert("Password salah!");
+                return false;
+            } else {
+                alert("Login berhasil!");
+                return true;
+            }
+        }
+    </script>
+</head>
+<body>
+  <h1>Ujian Tengah Semester</h1> <br>
+  <h2>Praktikum Sistem Informasi Geografis Berbasis Web</h2> <br><br>
+  <b>Muhammad Akhyar Purlista</b><br>
+  <i>20/460259/TK/50848</i>
+  <p>Praktikum Sistem Informasi Geografis berbasis Web pada paruh pertama semester dilaksanakan pada 7 pertemuan.
+    Minggu pertama dilakukan untuk perkenalan mengenai mata kuliah ini, apa saja yang akan dilakukan, dan bagaimana
+    kesepakatan dalam menjalani perkuliahan. minggu kedua dan ketiga mempelajari mengenai pembuatan web sederhana menggunakan
+    HTML dan CSS dan pembuatan CV dengan WIX. Minggu keempat dan kelima digunakan untuk mempelajari bagaimana pembuatan validasi
+    angka dan password, perhitungan bilangan, dan penggunaan bootstrap untuk CV. Pada minggu keenam dan ketujuh dilanjutkan dengan
+    mempelajari pembuatan leaflet.</p>
+
+
+<br>
+<br>
+
+  <r> tulisan ini merah untuk soal nomor 6 memakai dua warna yang berbeda. Walaupun di title Saya
+      sudah menggunakan dua warna yang berbeda. </r>
+<br>
+
+  <h2>Berikut adalah tabel nama dan NIM:</h2>
+
+  <table border="1" cellpadding="10" cellspacing="0">
+    <tr>
+      <th>Nama</th>
+      <th>NIM</th>
+    </tr>
+    <tr>
+      <td>Muhammad Akhyar Purlista</td>
+      <td>20/460259/TK/50848</td>
+    </tr>
+  </table>
+
+<hr>
+
+  <h2>Validasi Password</h2>
+  <p>Masukkan nomor hp dan password:</p>
+  <form onsubmit="return validasiPassword()">
+      No HP: <input type="number" id="number" required><br>
+      Password: <input type="password" id="password" required><br>
+      <button type="submit">submit</button>
+  </form>
+
+  <br><br>
+  <a href="https://geodesi.ugm.ac.id/en/english/" >Website Teknik Geodesi Universitas Gadjah Mada</a>
+
+  
+</body>
+
+
+    
+  
+</html>

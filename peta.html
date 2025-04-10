@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Peta Leaflet</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <!-- Leaflet CSS -->
+  <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+  
+  <style>
+    #map {
+      height: 500px;
+      width: 100%;
+    }
+  </style>
+</head>
+<body>
+  <h3>Peta dengan Leaflet</h3>
+  <div id="map"></div>
+
+  <!-- Leaflet JS -->
+  <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+  <script>
+    // Inisialisasi peta
+    var map = L.map('map').setView([-6.200000, 106.816666], 13); // Koordinat Jakarta
+
+    // Tambahkan tile layer dari OpenStreetMap
+    L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+      attribution: '&copy; OpenStreetMap contributors'
+    }).addTo(map);
+
+    // Tambahkan marker
+    var marker = L.marker([-7.7704, 110.3779]).addTo(map);
+    marker.bindPopup("Fakultas Teknik UGM").openPopup();
+
+    // Tambahkan marker
+    var marker = L.marker([-7.7697, 110.3797]).addTo(map);
+    marker.bindPopup("Fakultas Kehutanan UGM").openPopup();
+ 
+    // Tambahkan marker
+    var marker = L.marker([-7.7700, 110.3808]).addTo(map);
+    marker.bindPopup("Fakultas kedokteran UGM").openPopup();
+
+    // Tambahkan marker
+    var marker = L.marker([-7.7699, 110.3795]).addTo(map);
+    marker.bindPopup("Fakultas Ilmu Sosial dan Politik UGM").openPopup();
+
+    // Tambahkan marker
+    var marker = L.marker([-7.697, 110.3]).addTo(map);
+    marker.bindPopup("Fakultas Matematika dan Ilmu Pengetahuan Alam UGM").openPopup();
+  </script>
+</body>
+</html>
